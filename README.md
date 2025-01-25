@@ -82,19 +82,20 @@
    cd ai-travel-assistant
    ```
 
-3. Install dependencies:
+2. Install dependencies:
 
    ```bash
    npm install
    pip install -r requirements.txt
    ```
 
-5. Set up environment variables:
+3. Set up environment variables:
    - Create a `.env.local` file for the frontend:
 
      ```env
      NEXT_PUBLIC_API_URL=http://localhost:8000
      ```
+
    - Create a `.env` file for the backend:
 
      ```env
@@ -102,25 +103,25 @@
      MINDSDB_API_KEY=your_mindsdb_api_key
      ```
 
-6. Start the database:
+4. Start the database:
 
    ```bash
    docker-compose up
    ```
 
-8. Start the backend:
+5. Start the backend:
 
    ```bash
    uvicorn app.main:app --reload
    ```
 
-10. Start the frontend:
+6. Start the frontend:
 
    ```bash
    npm run dev
    ```
 
-11. Access the app at `http://localhost:3000`.
+7. Access the app at `http://localhost:3000`.
 
 ---
 
@@ -150,7 +151,7 @@
    npm run build
    ```
 
-3. **Deploy on AWS EC2**:
+2. **Deploy on AWS EC2**:
    - Provision an EC2 instance.
    - Install Docker and deploy MariaDB using the provided Docker Compose file.
    - Deploy the frontend and backend.
